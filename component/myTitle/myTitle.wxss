@@ -1,0 +1,49 @@
+.position_cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my_title {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.my_title navigator.logo {
+  flex: 7;
+}
+.my_title navigator.logo image.logo_img {
+  width: 140rpx;
+  height: 60rpx;
+}
+.my_title .search_icon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my_title .search_icon image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.my_title .user_icon {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my_title .user_icon image {
+  width: 54rpx;
+  height: 56rpx;
+}
+.my_title .down_app {
+  flex: 3;
+  padding: 10rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  border-radius: 10rpx;
+  color: #fff;
+}
