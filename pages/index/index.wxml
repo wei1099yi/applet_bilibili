@@ -1,5 +1,26 @@
-<view>
+<view class="main">
+  <!-- 公共头部 -->
   <myTitle></myTitle>
-  首页
-
+  <!-- 首页导航 -->
+  <view class="nav_wrap">
+    <!-- 自己滚动区域的组件 -->
+    <scroll-view class="nav" scroll-x>
+      <view class="nav_item {{index===currentIndexNav?'active':''}}"
+      wx:for="{{navList}}"
+      bindtap="activeNav" data-index="{{index}}"
+      >
+      {{item.text}}
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 轮播图 -->
+  <swiper class="index_swiper" autoplay circular indicator-dots>
+    <swiper-item 
+    wx:for="{{swiperList}}"
+    >
+      <navigator>
+        <image src="{{item.imgSrc}}" mode="widthFix"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
 </view>

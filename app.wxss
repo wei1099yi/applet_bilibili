@@ -1,3 +1,6 @@
 page, view, swiper, swiper-item, image, navigator, video {
     box-sizing: border-box;
 }
+page {
+    --themeColor: #de688b;
+}
