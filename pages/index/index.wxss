@@ -16,3 +16,41 @@
 .main .index_swiper swiper-item image {
   width: 100%;
 }
+.main .video_warp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5rpx;
+}
+.main .video_warp .video_item {
+  margin-bottom: 20rpx;
+  width: 48%;
+}
+.main .video_warp .video_item .img_warp {
+  position: relative;
+}
+.main .video_warp .video_item .img_warp image {
+  width: 100%;
+  border-radius: 15rpx;
+}
+.main .video_warp .video_item .img_warp .video_info_warp {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 10rpx;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 24rpx;
+}
+.main .video_warp .video_item .video_title {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  color: #777777;
+  font-size: 28rpx;
+}

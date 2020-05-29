@@ -5,22 +5,41 @@
   <view class="nav_wrap">
     <!-- 自己滚动区域的组件 -->
     <scroll-view class="nav" scroll-x>
-      <view class="nav_item {{index===currentIndexNav?'active':''}}"
-      wx:for="{{navList}}"
-      bindtap="activeNav" data-index="{{index}}"
-      >
-      {{item.text}}
+      <view class="nav_item {{index===currentIndexNav?'active':''}}" wx:for="{{navList}}" bindtap="activeNav" data-index="{{index}}">
+        {{item.text}}
       </view>
     </scroll-view>
   </view>
   <!-- 轮播图 -->
-  <swiper class="index_swiper" autoplay circular indicator-dots>
-    <swiper-item 
-    wx:for="{{swiperList}}"
-    >
+  <swiper class="index_swiper" indicator-active-color="#fff" autoplay circular indicator-dots>
+    <swiper-item wx:for="{{swiperList}}">
       <navigator>
         <image src="{{item.imgSrc}}" mode="widthFix"></image>
       </navigator>
     </swiper-item>
   </swiper>
+  <!-- 视频列表 -->
+  <view class="video_warp">
+    <navigator class="video_item" wx:for="{{videoList}}" wx:key="id">
+      <!-- 图片容器 -->
+      <view class="img_warp">
+        <image src="{{item.imgSrc}}" mode="widthFix"></image>
+        <view class="video_info_warp">
+          <!-- 播放量容器 -->
+          <view class="play_cound_warp">
+            <!-- 播放量 -->
+            <text class="fa fa-play-circle-o"></text>
+            <text class="play_count">{{item.playCount}}</text>
+          </view>
+          <!-- 评论量容器 -->
+          <view class="comment_count_warp">
+            <text class="fa fa-commenting-o"></text>
+            <text class="play_count">{{item.commentCount}}</text>
+          </view>
+        </view>
+      </view>
+      <!-- 标题容器 -->
+      <view class="video_title">{{item.desc}}</view>
+    </navigator>
+  </view>
 </view>
