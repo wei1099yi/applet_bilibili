@@ -20,7 +20,7 @@
   </swiper>
   <!-- 视频列表 -->
   <view class="video_warp">
-    <navigator class="video_item" wx:for="{{videoList}}" wx:key="id">
+    <navigator class="video_item" url="../detail/detail?id={{item.id}}" wx:for="{{videoList}}" wx:key="id">
       <!-- 图片容器 -->
       <view class="img_warp">
         <image src="{{item.imgSrc}}" mode="widthFix"></image>

@@ -1,0 +1,99 @@
+.main .video_info {
+  margin-top: 10rpx;
+}
+.main .video_info video {
+  width: 100%;
+}
+.main .video_info .video_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+}
+.main .video_info .video_detail {
+  margin-top: 15rpx;
+  font-size: 28rpx;
+}
+.main .video_info .video_detail .author {
+  color: #000;
+}
+.main .video_info .video_detail text {
+  margin-right: 15rpx;
+  color: #666666;
+}
+.main .other_list {
+  margin-top: 10rpx;
+}
+.main .other_list .item_other {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.main .other_list .item_other .other_img_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.main .other_list .item_other .other_img_wrap image {
+  width: 90%;
+  border-radius: 15rpx;
+}
+.main .other_list .item_other .other_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+.main .other_list .item_other .other_info .other_title {
+  color: #e06f93;
+  font-size: 28rpx;
+}
+.main .other_list .item_other .other_info .other_detail {
+  color: #666;
+  font-size: 26rpx;
+}
+.main .comment_warp {
+  margin-top: 10rpx;
+}
+.main .comment_warp .comment_title {
+  padding: 10rpx;
+  font-size: 28rpx;
+}
+.main .comment_warp .comment_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #666;
+}
+.main .comment_warp .comment_list .comment_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.main .comment_warp .comment_list .comment_user image {
+  width: 60%;
+  border-radius: 50%;
+}
+.main .comment_warp .comment_list .comment_info {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .comment_warp .comment_list .comment_info .comment_datail {
+  margin-bottom: 15rpx;
+}
+.main .comment_warp .comment_list .comment_info .comment_datail .author {
+  color: #000;
+  font-size: 28rpx;
+}
+.main .comment_warp .comment_list .comment_info .comment_datail .date {
+  color: #666;
+  font-size: 24rpx;
+}
+.main .comment_warp .comment_list .comment_info .comment_content {
+  color: #000;
+  font-size: 28rpx;
+}

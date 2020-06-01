@@ -1,0 +1,120 @@
+.main {
+    .video_info {
+        margin-top: 10rpx;
+        video {
+            width: 100%;
+        }
+
+        .video_title {
+            display: flex;
+            justify-content: space-between;
+            font-size: 35rpx;
+        }
+
+        .video_detail {
+            margin-top: 15rpx;
+            font-size: 28rpx;
+            .author {
+                color: #000;
+            }
+            text {
+                margin-right: 15rpx;
+                color: rgb(102, 102, 102);
+            }
+        }
+    }
+
+    // 推荐视频
+    .other_list {
+        margin-top: 10rpx;
+        .item_other {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20rpx;
+            .other_img_wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+                image {
+                    width: 90%;
+                    border-radius: 15rpx;
+                }
+            }
+
+            .other_info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                // align-items: flex-end;
+                width: 60%;
+                .other_title {
+                    color: #e06f93;
+                    font-size: 28rpx;
+                }
+
+                .other_detail {
+                    color: #666;
+                    font-size: 26rpx;
+
+                    .play_count {
+                    }
+
+                    .comment_count {
+                    }
+                }
+            }
+        }
+    }
+
+    // 评论
+    .comment_warp {
+        margin-top: 10rpx;
+        .comment_title {
+            padding: 10rpx;
+            font-size: 28rpx;
+        }
+
+        .comment_list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10rpx;
+            padding: 10rpx;
+            border-bottom: 1rpx solid #666;
+            .comment_user {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                image {
+                    width: 60%;
+                    border-radius: 50%;
+                }
+            }
+
+            .comment_info {
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .comment_datail {
+                    margin-bottom: 15rpx;
+                    .author {
+                        color: #000;
+                        font-size: 28rpx;
+                    }
+
+                    .date {
+                        color: #666;
+                        font-size: 24rpx;
+                    }
+                }
+
+                .comment_content {
+                    color: #000;
+                    font-size: 28rpx;
+                }
+            }
+        }
+    }
+}
